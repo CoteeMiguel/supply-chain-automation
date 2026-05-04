@@ -1,4 +1,4 @@
-# HP Inc — Supply Chain Automation
+#Supply Chain Automation
 
 > RPA bots and data pipelines for HP Inc Latin America supply chain operations. Built and deployed in production in Chile, with replicas running in Peru and Colombia.
 
