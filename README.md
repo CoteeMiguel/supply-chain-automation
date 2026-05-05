@@ -1,6 +1,6 @@
 ## Supply Chain Automation
 
-> RPA bots and data pipelines for HP Inc Latin America supply chain operations. Built and deployed in production in Chile, with replicas running in Peru and Colombia.
+> RPA bots and data pipelines for a Fortune 500 Technology Leader Latin America supply chain operations. Built and deployed in production in Chile, with replicas running in Peru and Colombia.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
@@ -22,7 +22,7 @@
 
 ## Problem
 
-The HP Inc supply chain team was manually tracking hundreds of daily deliveries across three disconnected systems: SAP S/4 (ERP), DHL's TMS (transport management), and email threads between teams. This caused:
+This Fortune 500 Technology Leader supply chain team was manually tracking hundreds of daily deliveries across three disconnected systems: SAP S/4 (ERP), Global Logistics provider's TMS (transport management), and email threads between teams. This caused:
 
 - Recurring fines for cargo held at the airport past the free storage window
 - Underutilized maritime containers sailing toward Latin America (Mexico → Argentina)
@@ -73,7 +73,7 @@ RPA that automates the full daily delivery follow-up cycle: extracts all open or
 
 ---
 
-### `marisun.py` — DHL TMS ETL pipeline
+### `marisun.py` — Global Logistics Provider TMS ETL pipeline
 Authenticates to the LSP's TMS via HTTP session (no browser automation needed), downloads the last 100 days of delivery data, removes duplicates keeping only the latest status per delivery, and enriches the report with an aggregated status column based on business-defined criteria.
 
 **Stack:** Python · requests · pandas  
@@ -107,8 +107,8 @@ Selenium bot that logs into SAP S/4, filters deliveries by sales organization an
 ## Setup
 
 ```bash
-git clone https://github.com/your-username/supply-chain-automation
-cd hp-supply-chain-automation
+git clone https://github.com/CoteeMiguel/supply-chain-automation
+cd supply-chain-automation
 pip install -r requirements.txt
 ```
 
@@ -168,12 +168,12 @@ numpy
 
 ## Portfolio Note
 
-These scripts are the Python layer of a broader system. Other components (not included here as they are HP Inc proprietary configurations) are:
+These scripts are the Python layer of a broader system. Other components (not included here as they are the Fortune 500 Technology Leader proprietary configurations) are:
 
 - **Power Automate** — orchestrates daily execution and sends additional notifications
 - **Power BI** — regional dashboards consuming the processed Excel files
 - **SAP S/4** — source of order and delivery data
-- **DHL TMS** — source of transport status data
+- **Global Logistics Provider TMS** — source of transport status data
 
 ---
 
