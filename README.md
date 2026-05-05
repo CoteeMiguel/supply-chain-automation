@@ -181,4 +181,4 @@ These scripts are the Python layer of a broader system. Other components (not in
 
 **Jose Miguel Varas*  
 Supply Chain & Operations Automation 
-[linkedin.com/in/your-profile](https://linkedin.com/in/jmvaras/) · [github.com/your-username](https://github.com/CoteeMiguel)
+[linkedin.com/in/jmvaras](https://linkedin.com/in/jmvaras/) · [github.com/CoteeMiguel](https://github.com/CoteeMiguel)
