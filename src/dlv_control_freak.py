@@ -58,7 +58,7 @@ class ControlFreak:
         driver.find_element_by_xpath('//*[@id="M0:50::btn[8]"]').click()
 
         time.sleep(25)
-        #driver.find_element_by_xpath('/html/body/table/tbody/tr/td/div/form/table/tbody/tr[2]/td[1]/div/div[1]/div/div/table').send_keys(Keys.SHIFT,Keys.F9)
+        
         driver.find_element_by_xpath('/html').send_keys(Keys.SHIFT,Keys.F9)
         time.sleep(20)
         driver.find_element_by_xpath('//*[@id="UpDownDialogChoose"]').click()
